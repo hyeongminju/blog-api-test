@@ -1,3 +1,7 @@
+# 실행방법 
+```
+java -jar kkul-blog-homework.jar
+```
 # 블로그 검색
 ### Kakao blog 검색 API 를 이용한 결과 리턴
 ### Kakao blog 검색 API 가 동작하지 않을 경우 Naver API 활용하여 결과 리턴

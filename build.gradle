@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.blog.search'
-version = '-blog-homework'
+version = 'blog-homework'
 sourceCompatibility = '17'
 
 configurations {
