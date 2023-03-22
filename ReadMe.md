@@ -3,8 +3,8 @@
 ### Kakao blog 검색 API 가 동작하지 않을 경우 Naver API 활용하여 결과 리턴
 ### Kakao blog 검색 시 parameter utf-8 url-encoding 할 것
 ## API 명세 
-###URI : /search/blog 
-###Parameter : 
+### URI : /search/blog 
+### Parameter : 
 {
     "query" : "String", notempty required=true 
     "page": Integer, 1-50
@@ -12,7 +12,7 @@
     "sort": "String" accuracy|recency defaultValue = accuracy
 }
 
-###Response 
+### Response 
 카카오 블로그 검색의 경우 
 {
     "meta": {
@@ -71,8 +71,8 @@
 ### 인기 검색어 목록을 요청할 때 요청수로 정렬하여 Top10 리스트를 리턴한다.
 
 ## API 명세 
-###URI : /keyword
-###Parameter : 
+### URI : /keyword
+### Parameter : 
 없음
 
 ###Response 
