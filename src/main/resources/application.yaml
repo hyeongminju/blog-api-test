@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:blog
+    username: sa
+    password: 
+  h2:
+    console:
+      enabled: true
+      path: /blog-search
+
+blog:
+  search:
+    kakao:
+      host: https://dapi.kakao.com
+      url: /v2/search/blog
+      auth: KakaoAK
+      rest-api-key: a9e3e725199655deab7c7d0458e4eddc
+    naver:
+      host: https://openapi.naver.com
+      uri: /v1/search/blog.json
+      client-id: FCTZKjmdKvYAs3H14MXz
+      client-secret: Lz6RFpgmhO
+    
