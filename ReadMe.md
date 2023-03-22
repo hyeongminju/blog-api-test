@@ -5,17 +5,18 @@
 ## API 명세 
 ### URI : /search/blog 
 ### Parameter : 
-'''
+```
 {
     "query" : "String", notempty required=true 
     "page": Integer, 1-50
     "size": Integer, 1-50
     "sort": "String" accuracy|recency defaultValue = accuracy
 }
-'''
+```
 ### Response 
-'''
-카카오 블로그 검색의 경우 
+#### 카카오 블로그 검색의 경우 
+```
+
 {
     "meta": {
         "total_count": 5615,
@@ -41,11 +42,10 @@
         }
     ]
 }
-'''
+```
 
-
-'''
-네이버의 경우 
+#### 네이버의 경우 
+```
 {
     "lastBuildDate": "Wed, 22 Mar 2023 22:00:07 +0900",
     "total": 211702,
@@ -70,7 +70,7 @@
         }
     ]
 }
-'''
+```
 # 인기 검색어 목록
 ### In-Memory h2 를 사용하여 블로그 검색 요청이 들어올때마다 DB 에 저장한다.
 ### 인기 검색어 목록을 요청할 때 요청수로 정렬하여 Top10 리스트를 리턴한다.
@@ -78,9 +78,10 @@
 ## API 명세 
 ### URI : /keyword
 ### Parameter : 
-없음
+#### 없음
 
-###Response 
+### Response 
+```
 [
     {
         "keyword": "더 글로리8",
@@ -123,6 +124,7 @@
         "hit": 1
     }
 ]
+```
 
 ## 사용한 오픈소스
  : org.springframework.boot:spring-boot-starter-web
@@ -138,5 +140,5 @@
  : gson : 데이터 파싱용
 
  : lombok : gettter/setter 
- 
+
  : spring-boot-starter-validation : parameter validation
